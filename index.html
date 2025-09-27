@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blu</title>
+    <link rel="stylesheet" href="src/styles/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lumoslite@1.0.2/dist/lumos.css"
+    />
+  </head>
+  <body class="bg-blue-700">
+    <main class="w-full h-full bg-blue-700">
+      <!-- card -->
+      <div
+        data-lumos="fade-up"
+        class="w-[200px] h-[300px] absolute left-1/2 -translate-x-1/2 top-5 bg-[#3c81e3] rounded-xl overflow-hidden flex lumos shadow-2xl shadow-black"
+      >
+        <div class="w-[50px] h-full bg-black ml-2"></div>
+        <div class="ml-4 flex-col w-[140px]">
+          <!------------------------------------ full name------------------------->
+          <h5 id="nameCard" class="mt-7 w-[60%] flex">Full Name</h5>
+          <!----------------------------------- card NUmber ------------------------>
+          <div class="w-full flex flex-col mt-4">
+            <h5 id="cardNumber1">####</h5>
+            <h5 id="cardNumber2">####</h5>
+            <h5 id="cardNumber3">####</h5>
+            <h5 id="cardNumber4">####</h5>
+          </div>
+          <!---------------------------------- cvv2 and exp ------------------>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <span class="text-[12px]">EXP</span>
+              <div class="flex">
+                <h5 id="year" class="text-[12px]">####</h5>
+                <h5 id="expCard" class="text-[12px]">/</h5>
+                <h5 id="month" class="text-[12px]">##</h5>
+              </div>
+            </div>
+            <div class="mr-4">
+              <span class="text-[12px]">CVV2</span>
+              <h5 id="cvvCard" class="text-[12px]">###</h5>
+            </div>
+          </div>
+          <!-- logo saman -->
+          <div class="flex mt-5 gap-2">
+            <h4 class="text-[12px]">Saman Bank</h4>
+            <img class="w-[20px] h-[20px]" src="src/images/logo.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- input -->
+      <div
+        class="w-[500px] mx-auto mt-[250px] bg-white shadow-lg shadow-black rounded-xl px-8 pt-30 pb-5"
+      >
+        <form class="flex flex-col gap-7" action="">
+          <!---------------------- card holders ------------------------->
+          <div class="flex flex-col gap-2">
+            <label class="capitalize text-lg text-black font-semibold" for=""
+              >card holders</label
+            >
+            <input
+              id="name"
+              class="border border-[#6969695d] rounded-md py-2 pl-3"
+              type="text"
+              placeholder="Full Name"
+            />
+          </div>
+          <!------------------------ card number ------------------------->
+          <div class="flex flex-col gap-2">
+            <label class="capitalize text-lg text-black font-semibold" for=""
+              >card Number</label
+            >
+            <div id="cardNumberInps" class="w-full flex justify-between">
+              <input
+                class="w-[24%] border border-[#6969695d] rounded-md py-2 pl-3 text-[12px]"
+                type="text"
+                placeholder="Card Number"
+              />
+              <input
+                class="w-[24%] border border-[#6969695d] rounded-md py-2 pl-3 text-[12px]"
+                type="text"
+                placeholder="Card Number"
+              /><input
+                class="w-[24%] border border-[#6969695d] rounded-md py-2 pl-3 text-[12px]"
+                type="text"
+                placeholder="Card Number"
+              /><input
+                class="w-[24%] border border-[#6969695d] rounded-md py-2 pl-3 text-[12px]"
+                type="text"
+                placeholder="Card Number"
+              />
+            </div>
+          </div>
+          <!------------------------------- exp ----------------------------->
+          <div class="flex flex-col gap-2">
+            <label class="capitalize text-lg text-black font-semibold" for=""
+              >Exp</label
+            >
+            <div id="expInpt">
+              <input
+                placeholder="Year"
+                class="border border-[#6969695d] rounded-md py-2 px-2"
+                type="text"
+              />
+              <input
+                placeholder="Month"
+                class="border border-[#6969695d] rounded-md py-2 px-2"
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="capitalize text-lg text-black font-semibold" for=""
+              >cvv2</label
+            >
+            <input
+              id="cvv2Inp"
+              class="border border-[#6969695d] rounded-md py-2 pl-3"
+              type="text"
+              placeholder="Cvv2"
+            />
+          </div>
+          <a
+            class="capitalize bg-[#3c81e3] py-4 rounded-md text-white text-lg font-bold flex justify-center items-center hover:scale-105 hover:bg-[#0a3879] duration-300"
+            href="#"
+          >
+            submit
+          </a>
+        </form>
+      </div>
+    </main>
+  </body>
+  <script src="src/js/master.js"></script>
+</html>
