@@ -523,7 +523,7 @@
   }
 }
 @font-face {
-  font-family: lalezar;
+  font-family: "lalezar";
   src: url(../fonts/Lalezar-Regular.ttf);
 }
 body {
@@ -531,7 +531,7 @@ body {
 }
 @layer utilities {
   .lalezar {
-    font-family: lalezar;
+    font-family: "lalezar";
   }
   .rounded1 {
     border-radius: 75% 25% 17% 83% / 16% 50% 50% 84%;
