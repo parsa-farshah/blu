@@ -4,7 +4,6 @@ let _nameCard = document.querySelector("#nameCard");
 _name.addEventListener("input", (e) => {
   let nameVal = e.target.value;
   _nameCard.innerText = nameVal;
-  console.log(nameVal);
 });
 //////////////////////////////////// card number
 let cardNumber1 = document.querySelector("#cardNumber1");
