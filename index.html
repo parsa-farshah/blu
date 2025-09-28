@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://unpkg.com/lumoslite@1.0.2/dist/lumos.css"
     />
+    <link rel="shortcut icon" href="src/images/blu logo.png" type="image/x-icon">
   </head>
   <body class="bg-blue-700">
     <main class="w-full h-full bg-blue-700">
@@ -52,12 +53,12 @@
       </div>
       <!-- input -->
       <div
-        class="w-[90%] sm:w-[50%] mx-auto mt-[250px] bg-white shadow-lg shadow-black rounded-xl px-8 pt-30 pb-5"
+        class="w-[90%] sm:w-[50%] mx-auto mt-[250px] bg-white shadow-lg shadow-black rounded-xl px-8 pt-20 pb-5"
       >
-        <form class="flex flex-col gap-7" action="">
+        <form class="flex flex-col gap-5" action="">
           <!---------------------- card holders ------------------------->
           <div class="flex flex-col gap-2">
-            <label class="capitalize text-lg text-black font-semibold" for=""
+            <label class="capitalize text-md text-black font-semibold" for=""
               >card holders</label
             >
             <input
@@ -69,25 +70,25 @@
           </div>
           <!------------------------ card number ------------------------->
           <div class="flex flex-col gap-2">
-            <label class="capitalize text-lg text-black font-semibold" for=""
+            <label class="capitalize text-md text-black font-semibold" for=""
               >card Number</label
             >
             <div id="cardNumberInps" class="w-full flex justify-between">
               <input
-                class="w-[24%] border border-[#6969695d] rounded-md py-2 pl-3 text-[12px]"
+                class="w-[24%] border border-[#6969695d] rounded-md py-2 pl-3 text-[9px] md:text-[14px]"
                 type="text"
                 placeholder="Card Number"
               />
               <input
-                class="w-[24%] border border-[#6969695d] rounded-md py-2 pl-3 text-[12px]"
+                class="w-[24%] border border-[#6969695d] rounded-md py-2 pl-3 text-[9px] md:text-[14px]"
                 type="text"
                 placeholder="Card Number"
               /><input
-                class="w-[24%] border border-[#6969695d] rounded-md py-2 pl-3 text-[12px]"
+                class="w-[24%] border border-[#6969695d] rounded-md py-2 pl-3 text-[9px] md:text-[14px]"
                 type="text"
                 placeholder="Card Number"
               /><input
-                class="w-[24%] border border-[#6969695d] rounded-md py-2 pl-3 text-[12px]"
+                class="w-[24%] border border-[#6969695d] rounded-md py-2 pl-3 text-[9px] md:text-[14px]"
                 type="text"
                 placeholder="Card Number"
               />
@@ -95,10 +96,10 @@
           </div>
           <!------------------------------- exp ----------------------------->
           <div class="flex flex-col gap-2">
-            <label class="capitalize text-lg text-black font-semibold" for=""
+            <label class="capitalize text-md text-black font-semibold" for=""
               >Exp</label
             >
-            <div id="expInpt" class="flex justify-between border">
+            <div id="expInpt" class="flex justify-between">
               <input
                 placeholder="Year"
                 class="border border-[#6969695d] rounded-md py-2 px-2 w-[45%]"
@@ -112,7 +113,7 @@
             </div>
           </div>
           <div class="flex flex-col gap-2">
-            <label class="capitalize text-lg text-black font-semibold" for=""
+            <label class="capitalize text-md text-black font-semibold" for=""
               >cvv2</label
             >
             <input
@@ -131,6 +132,49 @@
         </form>
       </div>
     </main>
+        <!----------------------------- me ------------------------------ -->
+    <div
+      class="fixed bottom-[7%] right-[2%] w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] z-50 flex justify-center items-center cursor-pointer group"
+    >
+      <div class="w-[100%] h-full rounded-full relative">
+        <div
+          class="w-[105%] h-[105%] rounded1 backdrop-blur-xs bg-[#db212d9f] absolute"
+        ></div>
+        <div
+          class="w-[105%] h-[105%] rounded2 backdrop-blur-xs bg-[#ca020f83] absolute"
+        ></div>
+        <div
+          class="w-[0px] group-hover:w-[105%] duration-1000 h-[90%] bgRounded bg-[#ff000060] backdrop-blur-xs absolute right-[40%] top-[50%] -translate-y-1/2 p-4 flex flex-col shadow-2xl shadow-red-700"
+        >
+          <!-- github -->
+          <a
+            class="w-[30%] h-full hover:opacity-60 duration-500 flex items-center justify-center"
+            href="https://github.com/parsa-farshah"
+          >
+            <img class="w-[30px] h-[30px]" src="src/images/github.png" alt="" />
+          </a>
+          <!-- linkedin -->
+          <a
+            class="w-[30%] h-full hover:opacity-60 duration-500 flex items-center justify-center"
+            href="https://www.linkedin.com/in/parsa-dehghan-pour-farashah-85ab04250/"
+          >
+            <img class="w-[30px] h-[30px]" src="src/images/linkedin.png" alt="" />
+          </a>
+          <!-- instagram -->
+          <a
+            class="w-[30%] h-full hover:opacity-60 duration-500 flex items-center justify-center"
+            href="https://www.instagram.com/parsa_dehghanpour_dv?igsh=eHkwNWhsa3I4ZWVp"
+          >
+            <img class="w-[30px] h-[30px]" src="src/images/instagram.png" alt="" />
+          </a>
+        </div>
+        <img
+          class="w-full h-full object-center object-cover absolute top-0 left-0 z-50"
+          src="src/images/parsa.png"
+          alt=""
+        />
+      </div>
+    </div>
   </body>
   <script src="src/js/master.js"></script>
 </html>

@@ -23,9 +23,22 @@ cardNumberInps.forEach((val, i) => {
     } else if (val.value.length == 0) {
       val.previousElementSibling.focus();
     }
+    if (i == 1 || i == 2) {
+      let temp1 = "";
+      let temp2 = "";
+      for (let x = 0; x < val.value.length; x++) {
+        if (i == 1) {
+          temp1 += "*";
+          cardNumber2.innerText = temp1;
+        } else if (i == 2) {
+          temp2 += "*";
+          cardNumber3.innerText = temp2;
+        }
+      }
+    }
     cardNumber1.innerText = cardNumberInps[0].value || "####";
-    cardNumber2.innerText = cardNumberInps[1].value || "####";
-    cardNumber3.innerText = cardNumberInps[2].value || "####";
+    // cardNumber2.innerText = cardNumberInps[1].value || "####";
+    // cardNumber3.innerText = cardNumberInps[2].value || "####";
     cardNumber4.innerText = cardNumberInps[3].value || "####";
   });
 });
@@ -55,4 +68,3 @@ cvv2Inp.addEventListener("input", () => {
   }
   cvvCard.innerText = cvv2Inp.value || "###";
 });
-
