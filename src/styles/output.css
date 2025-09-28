@@ -16,6 +16,7 @@
     --text-lg--line-height: calc(1.75 / 1.125);
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --font-weight-black: 900;
     --radius-md: 0.375rem;
     --radius-xl: 0.75rem;
     --blur-xs: 4px;
@@ -447,6 +448,10 @@
   }
   .text-\[12px\] {
     font-size: 12px;
+  }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
