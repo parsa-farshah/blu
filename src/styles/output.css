@@ -526,6 +526,9 @@ body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 @layer utilities {
+  .lalezar {
+    font-family: lalezar;
+  }
   .rounded1 {
     border-radius: 75% 25% 17% 83% / 16% 50% 50% 84%;
     animation: rot1 20s linear alternate infinite;
@@ -564,6 +567,10 @@ body {
   100% {
     transform: rotate(180deg);
   }
+}
+@font-face {
+  font-family: lalezar;
+  src: url(../fonts/Lalezar-Regular.ttf) format("truetype");
 }
 @property --tw-translate-x {
   syntax: "*";
