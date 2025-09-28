@@ -24,10 +24,6 @@ body {
   .bgRounded {
     border-radius: 14% 86% 0% 100% / 75% 0% 100% 25%;
   }
-
-  .shadowtxt {
-    text-shadow: -100px 50px 100px rgba(78, 147, 237, 0.8);
-  }
   .spin2 {
     animation: spin2 10s linear infinite alternate;
   }
