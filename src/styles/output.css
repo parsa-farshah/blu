@@ -524,7 +524,7 @@
 }
 @font-face {
   font-family: "lalezar";
-  src: url(src/fonts/Lalezar-Regular.ttf);
+  src: url(../fonts/Lalezar-Regular.ttf);
 }
 body {
   color: rgba(12, 12, 12, 0.829);
