@@ -522,6 +522,9 @@
     }
   }
 }
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
 @layer utilities {
   .rounded1 {
     border-radius: 75% 25% 17% 83% / 16% 50% 50% 84%;
